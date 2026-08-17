@@ -32,13 +32,15 @@
 
 **Recommended first targets:**
 
-| Program | Why | Bounty Range |
-|---------|-----|--------------|
-| Notion | Good documentation | $100-$10,000 |
-| Linear | Modern tech stack | $100-$5,000 |
-| Cal.com | Open source | $50-$2,000 |
-| PostHog | Startup-friendly | $100-$5,000 |
-| Railway | Cloud platform | $100-$5,000 |
+| Program | Why | Bounty Range | XSS Status |
+|---------|-----|--------------|------------|
+| Notion | Good documentation | $100-$10,000 | ✅ In Scope |
+| Linear | Modern tech stack | $100-$5,000 | ✅ In Scope |
+| PostHog | Startup-friendly | $100-$5,000 | ✅ In Scope |
+| Railway | Cloud platform | $100-$5,000 | ✅ In Scope |
+| GitLab | Large scope | $100-$20,000 | ✅ In Scope |
+
+⚠️ **Warning:** Cal.com explicitly lists XSS as OUT OF SCOPE. Do NOT submit XSS reports to Cal.com.
 
 ## Step 4: Learn the Workflow
 

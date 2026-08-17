@@ -42,7 +42,8 @@ You are continuing a cybersecurity lab project for Akash. The project is at `~/c
 ### 3. cal.com (Bug bounty target)
 - Found: 47 DOM-Based XSS vulnerabilities on multiple pages
 - Report: Created at `bugbounty/reports/cal_com_xss_report.md`
-- Status: 🎯 Ready to submit to HackerOne
+- Status: ❌ **CANNOT SUBMIT** — XSS is explicitly OUT OF SCOPE for Cal.com
+- Action: Do NOT submit this report. Focus on other targets.
 
 ## Current State
 
@@ -53,17 +54,19 @@ You are continuing a cybersecurity lab project for Akash. The project is at `~/c
 ### Key Files
 - `~/cybersecurity-lab/` - Main project directory
 - `~/vibehq_backend/` - oneresume.life backend code
-- `~/cybersecurity-lab/bugbounty/reports/cal_com_xss_report.md` - Ready to submit
+- `~/cybersecurity-lab/bugbounty/reports/cal_com_xss_report.md` - ⚠️ Cannot submit (XSS out of scope)
+- `~/cybersecurity-lab/bugbounty/TARGET_LIST.md` - Updated target list (XSS in-scope programs)
 
 ## Next Steps
 
 ### Immediate
-1. Submit Cal.com XSS report to HackerOne
-2. Scan more startups from TARGET_LIST.md
-3. Build reputation on bug bounty platforms
+1. ~~Submit Cal.com XSS report to HackerOne~~ ❌ **CANCELLED** — XSS is out of scope
+2. Create HackerOne account (if not already done)
+3. Start testing Notion or Linear (beginner-friendly, XSS in-scope)
+4. Scan targets from updated TARGET_LIST.md
 
 ### Short Term
-1. Find and report 5-10 vulnerabilities on small startups
+1. Find and report 5-10 vulnerabilities on XSS-in-scope programs
 2. Get first bug bounty payment
 3. Build a portfolio of findings
 
@@ -102,6 +105,7 @@ python bugbounty/find_small_startups.py
 3. **Be professional** - Respond promptly to triage
 4. **Build reputation** - Trust takes time to build
 5. **Learn continuously** - Security is always evolving
+6. **⚠️ Always check scope** - Cal.com explicitly lists XSS as OUT OF SCOPE. Never assume a vulnerability type is in-scope without checking the program's scope document first.
 
 ## User Context
 
