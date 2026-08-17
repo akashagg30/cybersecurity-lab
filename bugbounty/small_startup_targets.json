@@ -1,0 +1,189 @@
+[
+  {
+    "name": "CleverTap",
+    "url": "https://clevertap.com",
+    "type": "SaaS",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "WebEngage",
+    "url": "https://webengage.com",
+    "type": "Marketing",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Razorpay",
+    "url": "https://razorpay.com",
+    "type": "Fintech",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Cashfree",
+    "url": "https://cashfree.com",
+    "type": "Fintech",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Groww",
+    "url": "https://groww.in",
+    "type": "Fintech",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Zerodha",
+    "url": "https://zerodha.com",
+    "type": "Fintech",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Unacademy",
+    "url": "https://unacademy.com",
+    "type": "EdTech",
+    "country": "India",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Cal.com",
+    "url": "https://cal.com",
+    "type": "Scheduling",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "PostHog",
+    "url": "https://posthog.com",
+    "type": "Analytics",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": false,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Linear",
+    "url": "https://linear.app",
+    "type": "Project Mgmt",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Railway",
+    "url": "https://railway.app",
+    "type": "Cloud",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Render",
+    "url": "https://render.com",
+    "type": "Cloud",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Supabase",
+    "url": "https://supabase.com",
+    "type": "Database",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Clerk",
+    "url": "https://clerk.com",
+    "type": "Auth",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Stytch",
+    "url": "https://stytch.com",
+    "type": "Auth",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "WorkOS",
+    "url": "https://workos.com",
+    "type": "Auth",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  },
+  {
+    "name": "Resend",
+    "url": "https://resend.com",
+    "type": "Email",
+    "country": "Global",
+    "status": "active",
+    "response_code": 200,
+    "has_login": true,
+    "has_dashboard": true,
+    "likely_target": true
+  }
+]

